@@ -29,25 +29,25 @@ function CalcularPrecio ()
 if (Cant = 5 && Marc == "ArgentinaLuz"){
     Desc = Total - ((Total)*0.4);
 }
-if (Cant = 5 && !(Marc == "ArgentinaLuz")){
+else if (Cant = 5 && !(Marc == "ArgentinaLuz")){
     Desc = Total - ((Total)*0.3);
 }
-if (Cant = 4 && Marc == "ArgentinaLuz" || Marc == "FelipeLamparas"){
+else if (Cant = 4 && Marc == "ArgentinaLuz" || Marc == "FelipeLamparas"){
     Desc = Total - ((Total)*0.25);
 }
-if (Cant = 4 && !(Marc == "ArgentinaLuz" || Marc == "FelipeLamparas")){
+else if (Cant = 4 && !(Marc == "ArgentinaLuz" || Marc == "FelipeLamparas")){
     Desc = Total - ((Total)*0.2);        
 }
-if (Cant = 3 && Marc == "ArgentinaLuz"){
+else if (Cant = 3 && Marc == "ArgentinaLuz"){
     Desc = Total - ((Total)*0.15);
 }
-if (Cant = 3 && Marc == "FelipeLamparas"){
+else if (Cant = 3 && Marc == "FelipeLamparas"){
     Desc = Total - ((Total)*0.1);
 }
-if (Cant = 3 && !(Marc == "ArgentinaLuz" || Marc == "FelipeLamparas")){
+else if (Cant = 3 && !(Marc == "ArgentinaLuz" || Marc == "FelipeLamparas")){
     Desc = Total - ((Total)*0.05);        
 }
-if (Cant = 2 || Cant = 1){
+else if (Cant = 2 || Cant = 1){
     Desc = Total;
 }
 else {
